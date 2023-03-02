@@ -10,7 +10,6 @@ echo -e "compile              Compile nstool using prebuilt dependencies, recomm
 
 }
 
-
 if [ "$ARG1" == "compile-all" ]
 then
 	git submodule init
