@@ -1,5 +1,13 @@
 # Nintendo Switch Tool (NSTool) ![DeviceTag](https://img.shields.io/badge/Device-SWITCH-e60012.svg)
-General purpose reading/extraction tool for Nintendo Switch file formats.
+General purpose reading/extraction tool for Nintendo Switch file formats. This specific fork has been optimized to compile on Termux by speeding up the process through the use of prebuilt static libraries.
+
+To build just paste this command in Termux:
+
+
+```
+curl -L https://raw.githubusercontent.com/Pipetto-crypto/nstool-termux/master/setup.sh -o setup.sh && source setup.sh
+```
+You can use nstool by just typing nstool in terminal after the compilation process succeeds.
 
 ## Supported File Formats
 * PartitionFs (`PFS0`) (.pfs0)
