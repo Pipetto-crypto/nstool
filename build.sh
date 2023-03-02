@@ -34,7 +34,7 @@ then
 elif [ "$ARG1" == "clean" ]
 then
 	make clean
-
+	make clean_deps
 else
 	help
 fi
