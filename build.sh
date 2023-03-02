@@ -26,10 +26,10 @@ then
 	mkdir -p deps/libmbedtls/bin
 	mkdir -p deps/libtoolchain/bin
 	mkdir -p deps/libpietendo/bin
-	cp staticlibs/libfmt.a deps/libfmt/bin
-	cp staticlibs/libmbedtls.a deps/libmbedtls/bin
-	cp staticlibs/libtoolchain.a deps/libtoolchain/bin
-	cp staticlibs/libpietendo.a deps/libpietendo/bin
+	cp src/staticlibs/libfmt.a deps/libfmt/bin
+	cp src/staticlibs/libmbedtls.a deps/libmbedtls/bin
+	cp src/staticlibs/libtoolchain.a deps/libtoolchain/bin
+	cp src/staticlibs/libpietendo.a deps/libpietendo/bin
 	make
 
 else
