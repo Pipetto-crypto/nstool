@@ -6,7 +6,7 @@ echo -e "build.sh [compile-all|compile]"
 echo -e "\nOptions:\n"
 echo -e "compile-all          Compile all dependencies before compiling nstool"
 echo -e "compile              Compile nstool using prebuilt dependencies, recommended for Termux users"
-
+echo -e "clean                Clean the repo"
 
 }
 
@@ -30,6 +30,10 @@ then
 	cp src/staticlibs/libtoolchain.a deps/libtoolchain/bin
 	cp src/staticlibs/libpietendo.a deps/libpietendo/bin
 	make
+
+elif [ "$ARG1" == "clean" ]
+then
+	make clean
 
 else
 	help
